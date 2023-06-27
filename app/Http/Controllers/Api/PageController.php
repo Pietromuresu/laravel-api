@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Project;
 use App\Models\Type;
-use App\Models\Technolog;
+use App\Models\Technology;
 
 use Paginator\Paginate;
 
