@@ -1,0 +1,49 @@
+@import '~bootstrap/scss/bootstrap';
+@import 'colorUtils.scss';
+@import 'card.scss';
+
+
+aside{
+    height: calc(100vh - 60px);
+    width: 250px;
+    position: fixed;
+    left: 0;
+    top: 55px;
+
+}
+
+main{
+    margin-top: 60px;
+    margin-left: 260px;
+
+}
+
+.pm-buttons-container{
+    .btn{
+        &:hover{
+            background-color: #74A2A5;
+
+        }
+
+    }
+
+}
+
+a{
+    color: #4f7779;
+}
+
+
+// Overwriting Paginator Nav
+.page-item .page-link {
+    z-index: 1;
+    color: black;
+
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: black;
+    background-color: #74A2A5;
+    border-color: #74A2A5;
+}

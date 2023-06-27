@@ -1,0 +1,42 @@
+
+.pm-card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    height: 780px;
+
+    // Coloured stripe on top of the card
+    .pm-coloured-stripe{
+        height: 10px;
+        width: 120%;
+        margin-left: -10px;
+        margin-bottom: 20px;
+
+    }
+
+    .pm-card{
+        overflow: hidden;
+        height: 350px;
+        width: 270px;
+        border-radius: 20px;
+        margin-left: 5px;
+        margin-top: 20px;
+        padding: 10px;
+        padding-top: 0;
+        background-color: #adafbe7a;
+
+        p,
+        h4{
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+
+        h6{
+            line-height: 20px;
+
+        }
+    }
+}
