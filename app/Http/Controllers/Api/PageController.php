@@ -17,6 +17,11 @@ class PageController extends Controller
         return response()->json($projects);
     }
 
+    public function filteredProjects($id){
+        $projects = Project::where('type_id', $id)->with('type', 'technologies')->paginate(8);
+        return response()->json($projects);
+    }
+
     public function types(){
         $types = Type::all();
         return response()->json($types);

@@ -25,6 +25,7 @@ Route::namespace('Api')
         ->prefix('projects')
         ->group(function(){
             Route::get('/', [PageController::class, 'index']);
-            Route::get('/types', [PageController::class, 'types'])->name('types');
-            Route::get('/technologies', [PageController::class, 'technologies'])->name('technologies');
+            Route::get('/types', [PageController::class, 'types']);
+            Route::get('/technologies', [PageController::class, 'technologies']);
+            Route::get('/project-types/{id}', [PageController::class, 'filteredProjects']);
         });
