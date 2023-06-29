@@ -30,4 +30,5 @@ Route::namespace('Api')
             Route::get('/project-types/{id}', [PageController::class, 'filteredType']);
             Route::get('/project-technologies/{id}', [PageController::class, 'filteredTechnology']);
             Route::get('/{slug}', [PageController::class, 'getBySlug']);
+            Route::get('/search/{nameToSearch}', [PageController::class, 'getByName']);
         });
