@@ -43,4 +43,9 @@ class PageController extends Controller
         return response()->json($technologies);
     }
 
+    public function getBySlug($slug){
+        $project = Project::where('slug', $slug)->with('type', 'technologies')->first();
+        return response()->json($project);
+    }
+
 }
